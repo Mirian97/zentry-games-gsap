@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import type { ReactNode } from "react";
+import type { ComponentProps, ReactNode } from "react";
 
 export const Button = ({
 	id,
@@ -7,9 +7,7 @@ export const Button = ({
 	rightIcon,
 	leftIcon,
 	containerClass,
-}: {
-	id: string;
-	title: string;
+}: ComponentProps<"button"> & {
 	rightIcon?: ReactNode;
 	leftIcon?: ReactNode;
 	containerClass: string;
