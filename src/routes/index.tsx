@@ -7,7 +7,7 @@ export const Route = createFileRoute("/")({
 
 function App() {
 	return (
-		<main>
+		<main className="relative min-h-dvh w-dvw overflow-x-hidden">
 			<Hero />
 		</main>
 	);

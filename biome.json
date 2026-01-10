@@ -18,13 +18,17 @@
 	},
 	"formatter": {
 		"enabled": true,
-		"indentStyle": "tab"
+		"indentStyle": "tab",
+		"indentWidth": 2
 	},
 	"assist": { "actions": { "source": { "organizeImports": "on" } } },
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"recommended": true
+			"recommended": true,
+			"react": {
+				"useUniqueElementIds": "off"
+			}
 		}
 	},
 	"javascript": {
