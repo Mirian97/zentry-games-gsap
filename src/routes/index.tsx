@@ -7,7 +7,9 @@ export const Route = createFileRoute('/')({
 function App() {
   return (
     <main>
-      Welcome to the anime landing page
+      <h1 className="text-4xl font-bold font-circular-web text-violet-300">
+        Welcome to the anime landing page
+      </h1>
     </main>
   )
 }
