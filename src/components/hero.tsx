@@ -128,7 +128,7 @@ export const Hero = () => {
 							id="watch-trailer"
 							title="Watch trailer"
 							leftIcon={<TiLocationArrow />}
-							containerClass="bg-yellow-300 flex-center gap-1"
+							className="bg-yellow-300 flex-center gap-1"
 						/>
 					</div>
 				</div>

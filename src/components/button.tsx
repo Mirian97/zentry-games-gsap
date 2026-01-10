@@ -1,23 +1,22 @@
-import clsx from "clsx";
 import type { ComponentProps, ReactNode } from "react";
+import { cn } from "@/lib/utils";
 
 export const Button = ({
 	id,
 	title,
 	rightIcon,
 	leftIcon,
-	containerClass,
+	className,
 }: ComponentProps<"button"> & {
 	rightIcon?: ReactNode;
 	leftIcon?: ReactNode;
-	containerClass: string;
 }) => {
 	return (
 		<button
 			id={id}
-			className={clsx(
+			className={cn(
 				"group relative z-10 w-fit cursor-pointer overflow-hidden rounded-full bg-violet-50 px-7 py-3 text-black",
-				containerClass,
+				className,
 			)}
 		>
 			{leftIcon}

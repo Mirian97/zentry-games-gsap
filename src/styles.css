@@ -36,23 +36,36 @@ body {
   }
 }
 
-@theme inline {
+:root{
+  --color-blue-50: #DFDFF0;
+  --color-blue-75: #dfdff2;
+  --color-blue-100: #F0F2FA;
+  --color-blue-200: #010101;
+  --color-blue-300: #4FB7DD;
+
+  --color-violet-300: #5724ff;
+
+  --color-yellow-100: #8e983f;
+  --color-yellow-300: #edff66;
+}
+
+@theme {
  --font-zentry: "zentry", "sans-serif";
  --font-general: "general", "sans-serif";
  --font-circular-web: "circular-web", "sans-serif";
  --font-robert-medium: "robert-medium", "sans-serif";
  --font-robert-regular: "robert-regular", "sans-serif";
 
- --color-blue-50: #DFDFF0;
- --color-blue-75: #dfdff2;
- --color-blue-100: #F0F2FA;
- --color-blue-200: #010101;
- --color-blue-300: #4FB7DD;
+ --color-blue-50: var(--color-blue-50);
+ --color-blue-75: var(--color-blue-75);
+ --color-blue-100: var(--color-blue-100);
+ --color-blue-200: var(--color-blue-200);
+ --color-blue-300: var(--color-blue-300);
 
- --color-violet-300: #5724ff;
+ --color-violet-300: var(--color-violet-300);
 
- --color-yellow-100: #8e983f;
- --color-yellow-300: #edff66;
+ --color-yellow-100: var(--color-yellow-100);
+ --color-yellow-300: var(--color-yellow-300);
 }
 
 @layer utilities {
@@ -102,7 +115,7 @@ body {
   }
 
   .animated-word {
-    @apply special-font font-zentry font-black opacity-0;
+    @apply font-zentry font-black opacity-0;
     transform: translate3d(10px, 51px, -60px) rotateY(60deg) rotateX(-40deg);
     transform-origin: 50% 50% -150px !important;
     will-change: opacity, transform;
