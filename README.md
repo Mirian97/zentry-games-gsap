@@ -2,6 +2,10 @@
 
 A modern anime-style landing page built with React, Vite, Tailwind CSS, and GSAP, focused on smooth animations, scroll-based interactions, and immersive UI effects.
 
+<p align="center">
+    <img src="public/doc/hero.png" width="800" alt="Hero section from Zentry Games">
+</p>
+
 Live Demo: https://zentry-games-lp.vercel.app/
 
 ## ✨ Features
